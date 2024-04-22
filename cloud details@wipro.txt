@@ -1,0 +1,1834 @@
+10/4/2024
+
+Hello Everyone, Good Morning! if you have any issues with Cloud Labs, please ping here or Raise a Help-desk Ticket Visit:
+https://techsupport.rpsconsulting.in/
+OR Call At 9921716110 (Ulhas) for Immediate Support                                                                                                       
+HAPPY LEARNING! Have a Nice Day😊 RPS Tech Support 
+customer support platform
+RPS TechSupport
+customer support platform
+RPS TechSupport
+customer support platform
+has context menu
+
+
+
+
+
+flowchat details
+
+Task:
+www.lucidchart.com
+Intelligent Diagramming | Lucidchart
+ 
+Sign up to lucid chart (if not already).
+login to Lucid chart and 
+Draw a flow chart for bubble sort algorithm.
+
+has context menu
+
+
+
+
+Quick Sort
+---------------
+Task:
+	Identify what is quick sort
+	how it is implemented
+	and also its Order or growth,
+	advantages and disadvantages.
+
+
+
+Entry
+	key
+	value
+
+import java.util.Hashtable;
+
+public class App {
+
+	public static void main(String[] args) {
+		Hashtable<Integer, String> countries=new Hashtable<>();
+		countries.put(1, "India");
+		countries.put(2, "Pakistan");
+		countries.put(3, "Japan");
+		countries.put(3, "China");
+
+		System.out.println(countries);
+	}
+
+}
+
+
+
+
+
+
+
+12-4-2024
+
+C, C++ were not platform independent.
+
+
+
+problem:
+------------
+	swap(int i, int j)		i and j are formal parameters
+ 
+calling this method
+	swap(a,b)			when i and j are swapped, a and b are not affecte
+
+
+
+
+int i=20;
+		int j=i++;
+		System.out.println(j);
+
+
+
+
+
+
+
+
+
+
+
+
+THIS IS THE TASK 
+Dice Game I
+
+Each player will be allowed to throw  a dice 2 times. The points for each player will be calculated as follows :
+If the values thrown are different, the points scored is equal to the sum of the 2 values.
+If the values thrown are the same, the points scored is equal to double the sum of the 2 values.
+Write a program to calculate the points scored by a player.
+Input and Output Format:
+Input consists of 2 integers. The valid range of inputs is from 0 to 6. [ Both 0 and 6 inclusive]
+Output the points scored. In case of invalid inputs, print “Invalid Input”.
+Refer sample input and output for formatting specificaions.
+[All text in bold corresponds to input and the rest corresponds to output.]
+Sample Input and Output 1:
+Enter Value 1:
+5
+Enter Value 2:
+6
+The points scored is 11
+Sample Input and Output 2:
+Enter Value 1:
+5
+Enter Value 2:
+5
+The points scored is  20
+Sample Input and Output 3:
+Enter Value 1:
+8
+Enter Value 2:
+6
+Invalid Input 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+TASK:
+Playing with arrays has become a hobby for Arun. This time Arun wants to find the greatest number in the array such that it is the product of any two numbers in the array.
+Write a program to help Arun to the do the task. If no such number exists, then print -1.
+[Note: The two number that are used to find the product can be the number itself.  For example, if the array elements are [1,2,3] , then 1*3 = 3 will be the solution for this array.]
+Input Format :Maximum Product
+First input is an integer value that denotes the size of the array.
+Second input is a series of integers separated by space that denotes the array values.
+Output Format :
+Output is an  integer that denotes the maximum product.
+Sample Input 1:
+5
+35 30 7 6 5
+Sample Output 1:
+35
+Sample Input 2:
+5
+2 4 6 89 78
+Sample Output 2:
+-1
+
+
+
+
+TASK:
+N-smallest Elements
+
+Shreya was attending a coding competition and she was progressing good . Suddenly she got stuck in a problem where she needs to find the n-smallest elements in an array . Given an array of integers of size N and n value as inputs , Write a program to help Shreya find the first - n smallest elements from the array but they must be in the same order as they are in given array.
+Input Format :
+First input is an integer that denotes the size of the array, N.
+Second line consists of series of integers seperated by a space that denotes the array values.
+Third input is an integer that denotes the n value.
+Output Format:
+Output is a series of integers seperated by a space that denotes the n smallest elements.
+Sample Input 1:
+5
+4 8 2 5 9
+3
+Sample Output 1:
+4 2 5
+Sample Input 2:
+10
+7 3 8 11 55 22 1 6 13 2
+5
+Sample Output 2:
+7 3 1 6 2 
+
+
+
+
+
+
+
+
+
+
+SOLUATON
+import java.util.Arrays;
+import java.util.List;
+import java.util.Scanner;
+ 
+public class App {
+ 
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		Integer size=sc.nextInt();
+		Integer arr[]=new Integer[size];
+		for(Integer i=0;i<size;i++)
+		{
+			arr[i]=sc.nextInt();
+		}	
+		Integer n=sc.nextInt();
+			
+		
+		Integer []temp=Arrays.copyOfRange(arr, 0, size);
+		
+		Arrays.sort(temp);
+		
+		Integer smallest[]=Arrays.copyOfRange(temp, 0, n);
+		
+		List<Integer> inputs = Arrays.asList(smallest);
+		boolean isFirst=true;
+		for(Integer element : arr)
+		{
+			if(inputs.contains(element))
+			{
+				if(!isFirst)
+					System.out.print(" ");
+				System.out.print(element);
+				isFirst=false;
+			}
+		}
+		
+	}
+ 
+}
+ 
+
+
+
+TASK 
+
+
+5		side length of the city.	The city is always SQUARE.	5 * 5 = 25 places where tower can be fixed. 
+
+3		no of towers.		these 3 towers locations are need.	x1, y1	x2, y2	x3, y3
+
+2 2		t1	x,y
+
+0 1		t2	x,y
+
+4 1 		t3	x,y
+ 
+first, put some number ex: 1 on these locations of the city array
+ 
+for the above input, sideLength is 5 means,
+
+city[5][5]
+ 
+1 1 1 0 0
+
+1 1 1 1 0
+
+0 1 1 1 0
+
+1 1 1 1 0
+
+1 1 1 0 0
+ 
+count the 0s and print the count
+
+8
+ 
+if count>0
+
+No
+
+
+
+
+SOLUATION:	
+
+import java.util.Scanner;
+ 
+public class App {
+ 
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int sideLength=sc.nextInt();		//5
+		int city[][]=new int[sideLength][sideLength];
+		int noOfTowers=sc.nextInt();		//3
+		int positions[][]=new int[noOfTowers][2];
+		for(int i=0;i<noOfTowers;i++)
+		{
+			//i dont need j loop just for 2 co ordinates
+			positions[i][0]=sc.nextInt();
+			positions[i][1]=sc.nextInt();
+		}
+		//now fix "1" in locations where towers are present in city array
+		//for each tower, we need to put 1 in city at x and y
+		for(int i=0;i<noOfTowers;i++)
+		{
+			int x=positions[i][0];
+			int y=positions[i][1];
+			city[x][y]=1;	
+			//a tower covers 3 mts including tower location.
+//			so every adjacent location should be marked as 1
+			
+			//x +-1		x+0	x+1	,,,,,,,,,,,	y+-1	y+0	y+1
+			//diagonal		x+1 y+1			x-1	y-1
+			//diagonal		x+1 y-1			x-1	y+1
+			
+			//problem is 		index should not go out of bounds
+			
+			
+			
+			
+		}
+		
+		for(int i=0;i<sideLength;i++)
+		{
+			for(int j=0;j<sideLength;j++)
+			{
+				System.out.print(city[i][j]+"\t");
+			}
+			System.out.println();
+		}
+		
+		
+	}
+ 
+}
+ ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+15-04-2024
+Task:
+Lucky Prize IV
+ 
+In all the theatres in the Amphi Multiplex, prizes will be given to few lucky winners every day.
+The lucky winners will be decided based on the ticket number and the criteria set for that day.
+ 
+The criteria set for day 4 is that prizes will be given to all ticket holders whose ticket number satisy both the conditions given below :
+1.	The ticket number is a palindrome
+2.	The sum of the digits in the ticket number is even
+ 
+Given a ticket number, write a program to determine whether that ticket holder will be a lucky prize winner or not.
+ 
+Input and Output Format:
+ 
+Input consists of an integer that corresponds to the ticket number.
+Output consists of a string that is either “Winner” or “Not a winner”
+ 
+Sample Input 1:
+525
+ 
+Sample Output 1:
+Winner
+ 
+Sample Input 2:
+7896
+ 
+Sample Output 2:
+Not a winner
+
+-----------------
+input is an int
+//convert int to String....
+String str=String.valueOf(i);
+String s=""+i;		
+
+Integer.parseInt(str);		
+Integer.valueOf(str);		
+
+Solution:
+----------
+import java.util.Scanner;
+
+public class App {
+
+	
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int ticketNo=sc.nextInt();
+	
+		if(isPalindrome(ticketNo) && isEvenSum(ticketNo))
+		{
+			System.out.println("Winner");
+		}else
+		{
+			System.out.println("Not a winner");
+		}
+		
+	}
+	
+	private static boolean isEvenSum(int ticketNo)
+	{
+		//% and / approach
+		int temp=ticketNo;
+		int digitSum=0;
+		while(temp>0)
+		{
+			int digit=temp%10;
+			digitSum+=digit;
+			temp/=10;
+		}
+		return (digitSum%2==0);
+			
+	}
+
+	private static boolean isPalindrome(int ticketNo) {
+		String str=ticketNo+"";
+		//How to get reverse of a String? StringBuilder/ StringBuffer
+		StringBuilder sb=new StringBuilder();
+		sb.append(str);
+		sb.reverse();
+		String reverseStr=sb.toString();
+		return str.equals(reverseStr);
+	}
+
+}
+
+
+TASK:
+
+Run Length IV
+ 
+Write a program to find the length of the longest running sequence of even numbers in the given array. Also find the starting index of the longest running sequence of even numbers.
+ 
+Example :
+ 
+Consider the array ... { 2, 16, 15, 2, 6, 8, 10, 7, 22, 4 , 6}
+ 
+The 3 even number sequences in this array are {2, 16}, {2, 6, 8, 10} and {22, 4, 6}.
+The longest running even number sequence is {2, 6, 8, 10}
+The length of the longest running even number sequence is 4 and the starting index is 3.
+ 
+Note:
+The array indexing starts from 0.
+If there are multiple choices, select the choice where the starting index is minimum.
+ 
+Input and Output Format:
+ 
+The first line of the input consists of an integer n that corresponds to the number of elements in the array. The next 'n' lines of input consists of a single integer that correspond to the elements in the array.
+ 
+The first line of the output consists of the length of the longest running even number sequence and the second line of the output consists of the starting index of the longest running even number sequence.
+ 
+Sample Input :
+11
+2
+16
+15
+2
+6
+8
+10
+7
+22
+4
+6
+ 
+Sample Output :
+4
+3
+ 
+
+
+SOLUATION:
+
+
+
+ public static int[] findLongestEvenSequence(int[] array) {
+        int maxLength = 0;
+        int startIndex = -1;
+        int currentLength = 0;
+        int currentStartIndex = -1;
+        
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] % 2 == 0) {
+                if (currentLength == 0) {
+                    currentStartIndex = i;
+                }
+                currentLength++;
+            } else {
+                if (currentLength > maxLength) {
+                    maxLength = currentLength;
+                    startIndex = currentStartIndex;
+                }
+                currentLength = 0;
+            }
+        }
+        if (currentLength > maxLength) {
+            maxLength = currentLength;
+            startIndex = currentStartIndex;
+        }
+
+        int[] result = {maxLength, startIndex};
+        return result;
+    }
+}
+
+
+Task:
+
+1
+Maximum Product
+Playing with arrays has become a hobby for Arun. This time Arun wants to find the greatest number in the array such that it is the product of any two numbers in the array.
+Write a program to help Arun to the do the task. If no such number exists, then print -1.
+[Note: The two number that are used to find the product can be the number itself.  For example, if the array elements are [1,2,3] , then 1*3 = 3 will be the solution for this array.]
+
+Input Format :
+First input is an integer value that denotes the size of the array.
+Second input is a series of integers separated by space that denotes the array values.
+
+Output Format :
+Output is an  integer that denotes the maximum product.
+
+Sample Input 1:
+5
+35 30 7 6 5
+Sample Output 1:
+35
+
+Sample Input 2:
+5
+2 4 6 89 78
+Sample Output 2:
+-1
+
+Sample Input 3:
+5
+45 85 14 2 7
+Sample Output: 3:
+14
+
+-----------
+Solution:
+--------------
+import java.util.Scanner;
+
+public class App {
+
+	public static boolean containsNumber(int arr[],int num)
+	{
+		boolean isFound=false;
+		for(int x : arr)
+		{
+			if(x==num)
+			{
+				isFound=true;
+				break;
+			}
+		}
+		return isFound;
+	}
+	
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+		int arr[]=new int[n];
+		for(int i=0;i<n;i++)
+		{
+			arr[i]=sc.nextInt();
+		}
+		
+		int maxProduct=-1;
+		for(int i=0;i<arr.length;i++)
+		{
+			for(int j=i+1;j<arr.length;j++)
+			{
+				int product=arr[i]*arr[j];
+				//check if this product is found as an element in the array
+				if(containsNumber(arr, product))
+				{
+					if(product>maxProduct)
+					{
+						maxProduct=product;
+					}
+				}
+			}
+		}
+		
+		System.out.println(maxProduct);
+	}
+
+}
+
+---------------------------------------------
+
+16-04-2024
+TASK:
+Mobile Lock Pattern 
+ 
+Given the coordinates of  a lock pattern configuration, check whether it is a Valid Lock Pattern or not. A valid Lock pattern will be formed only by joining the adjacent neighbours.  If it is a valid lock pattern and if there is 
+       1)   Above 75% coverage, print "Excellent", 
+       2)  Above 50% coverage, print "Good", 
+       3)  Above 25% coverage, print "Average", 
+       4)  Else print "Poor". 
+(Coverage need to be calculated with respect to the total grid size) 
+        If it is an  invalid lock pattern, print "Invalid". 
+Assume that the pattern grid will always be a square. 
+Note: 
+To make the problem less complicated the following relaxations are made: 
+1) The testcases will not contain any overlap through a point in the pattern. 
+2) The pattern will always end at a new point. 
+3) The points given in the testcases always lie within the pattern grid. No need to check if the point is outside the grid. 
+ 
+
+Input Format: 
+The first line is an integer that corresponds to the side length of the pattern grid. 
+The second line is an integer that corresponds to the number of coordinates in the lock pattern, n. 
+The following n lines have the following pattern : x-coor y-coor 
+Output Format: 
+Print "Invalid" if there is the pattern is not properly linked, else print "Excellent " or "Good" or "Average" or "Poor", based on the number of points covered. 
+Sample Input 1: 
+3 
+5 
+1 1 
+2 1 
+3 1 
+2 2 
+3 3 
+Sample Output 1: 
+Good 
+Sample Input 2: 
+3 
+6 
+1 1 
+2 1 
+3 1 
+2 2 
+3 1 
+3 3 
+Sample Output 2: 
+Invalid
+ 
+Explanation:
+ 
+Sample Input 1: 
+
+3 			screen width.		3 * 3	 totally 9 points in the screen
+
+5 			pattern covers 5 points. 	next 5 inputs are x,y co ordinates
+
+1 1 	
+
+2 1 
+
+3 1 
+
+2 2 
+
+3 3 
+
+Sample Output 1: 
+
+Good  
+ 
+What you have to do?
+
+	check if every consequtive points are adjacent or not.
+ 
+ 
+NOTE:
+
+	All these co ordinates are 1 ordinal.
+ 
+ 
+
+
+SOLUATION:
+
+
+Solution:
+----------------------------------------
+import java.util.Scanner;
+public class App {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int screenWidth=sc.nextInt();
+		int noOfPoints=sc.nextInt();
+		int [][]points=new int[noOfPoints][2];
+		for(int i=0;i<noOfPoints;i++)
+		{
+			points[i][0]=sc.nextInt();
+			points[i][1]=sc.nextInt();
+		}
+		sc.close();
+		
+		//your code here
+		//start from first point, compare with next point.
+		for(int i=0;i<noOfPoints-1;i++)
+		{
+//			System.out.printf("%d,%d compared with %d,%d\n",points[i][0],points[i][1],points[i+1][0],points[i+1][1]);
+			int x1=points[i][0];
+			int y1=points[i][1];
+			
+			int x2=points[i+1][0];
+			int y2=points[i+1][1];
+			
+			//absolute difference between them must be maximum 1
+			if(Math.abs(x1-x2)>1 || Math.abs(y1-y2)>1)
+			{
+				System.out.println("Invalid");
+				System.exit(0);
+			}
+			
+			
+		}
+		//check coverage
+		int coverage=(int) (100*(float)noOfPoints/screenWidth);
+		if(coverage>75)
+		{
+			System.out.println("Excellent");
+		}else if(coverage>50)
+		{
+			System.out.println("Good");
+		}else if(coverage>25)
+		{
+			System.out.println("Average");
+		}
+		else
+		{
+			System.out.println("Poor");
+		}
+		
+		
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Demo:
+--------
+How to check if a String is matching a pattern or not.
+ 
+Check if the given input is a valid mobile number or not.
+Rules for a mobile number:
+	must be a 10 digit number
+	should not contain anything other than number
+	first digit must be within the range of 6-9
+ 
+Pattern:
+	[6-9]{1}[0-9]{9}
+ 
+//String class itself has matches() method
+ 
+import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+ 
+public class AppRegex2 {
+ 
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		String mobileNo=sc.nextLine();
+		//String class itself has matches() method
+		if(mobileNo.matches("[6-9]{1}[0-9]{9}"))
+		{
+			System.out.println("Valid");
+		}else
+		{
+			System.out.println("Invalid");
+		}
+	}
+ 
+}
+ 
+       		if(Pattern.matches("[6-9]{1}[0-9]{9}", mobileNo))
+		{
+			System.out.println("Valid");
+		}else
+		{
+			System.out.println("Invalid");
+		}
+
+
+
+Task:
+Accept a date as input from the user in dd-MMM-yyyy
+Display the week day of that date.
+Ex:
+	16-Apr-2024
+output:	Tuesday
+
+
+SOLUATION:
+import java.util.Date;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Scanner;
+ 
+public class AppWeekDay {
+ 
+	public static void main(String[] args) throws ParseException {
+		Scanner sc=new Scanner(System.in);
+		String input=sc.next();
+		SimpleDateFormat sdf=new SimpleDateFormat("dd-MMM-yyyy");
+		Date dt=sdf.parse(input);
+		
+		SimpleDateFormat sdf2=new SimpleDateFormat("EEEE");
+		System.out.println(sdf2.format(dt));
+	}
+ 
+}
+
+
+
+
+Last Character
+
+Rahul was tired after studying for so long , so he thought to play a small game with the words from his book . He opens a random page and selects a random word from it , and also  chooses the last digit of that page number n . Given an array of characters,Write a program to help Rahul find the last character that occurs n(last digit of the page number) times in the array . If no such character exists,then print -1.
+Input Format:
+First input is an integer that denotes the size of the array.
+Second line consists of  series of characters  seperated by a space that denotes the array values.
+Third input is an integer that denotes the n value.
+Output Format:
+Output is a character that denotes the last character which occurs n times.
+Sample Input 1:
+8
+a a b c n s d n
+2
+Sample Output 1:
+n
+Explanation:
+    In the given array 'a' and 'n' occurs 2 times which is equal to the n value . Even though 'a' occurs twice ,'n' is the one that occurs last.    
+    
+Sample Input 2:
+5
+a b c d e
+3
+Sample Output 2:
+-1 
+ like 1
+
+
+
+Soluation:
+[3:33 PM] Jagadeeswaran R (Unverified)
+import java.util.Arrays;
+import java.util.Scanner;
+ 
+public class App {
+ 
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+		char []arr=new char[n];
+		for(int i=0;i<n;i++)
+		{
+			arr[i]=sc.next().charAt(0);
+		}
+		
+		int maxCount=1;
+		char maxCountChar='\0';
+		for(int i=0;i<n-1;i++)
+		{
+			int count=1;
+			for(int j=i+1;j<n;j++)
+			{
+//				System.out.printf("i=%c,j=%c\n",arr[i],arr[j]);
+				if(arr[i]==arr[j])
+				{
+					count++;
+					if(count>=maxCount)
+					{
+						maxCount=count;
+						maxCountChar=arr[i];
+					}
+				}
+			}
+//			System.out.printf("%c is found %d times\n",arr[i],count);
+		}
+//		
+		if(maxCount>1)
+		{
+			System.out.println(maxCountChar);
+		}else
+		{
+			System.out.println(-1);
+		}
+	}
+ 
+}
+ 
+
+
+
+
+
+
+
+
+Task 9: String Operations
+Write a method that takes two strings, concatenates them, reverses the result, and then extracts the middle substring of the given length. Ensure your method handles edge cases, such as an empty string or a substring length larger than the concatenated string.
+ 
+
+
+Soluation:
+[4:58 PM] Anantha Reddy Thadi
+public class GFG {
+
+    public static void main(String[] args)
+
+    {
+
+        String str1 = "Computer";
+
+        String str2 = "Science";
+
+        String str3 = str1.concat(str2);
+
+        System.out.println(str3);
+
+        String str4 = "Portal";
+
+        String str5 = str3.concat(str4);
+
+        System.out.println(str5);
+
+    }
+
+}
+
+
+Task 8: Advanced Array Operations
+a)  Implement a method SliceArray that takes an array, a starting index, and an end index, then returns a new array containing the elements from the start to the end index.
+b) Create a recursive function to find the nth element of a Fibonacci sequence and store the first n elements in an array.
+ 
+
+import java.util.Arrays;
+
+public class Copy {
+  public static int[] getSlice(int[] arr, int stIndx, int enIndx) {
+    int[] slicedArr = new int[enIndx - stIndx];
+    for (int i = 0; i < slicedArr.length; i++) {
+      slicedArr[i] = arr[stIndx + i];
+    }
+    return slicedArr;
+  }
+
+  public static void main(String args[]) {
+    int[] arr = {20, 65, 87, 19, 55, 93, 76, 98, 54, 21};
+    int stIndx = 2, enIndx = 6;
+    int[] slicedArr = getSlice(arr, stIndx, enIndx + 1);
+    System.out.println("Slice of an Array: " + Arrays.toString(slicedArr));
+  }
+}
+
+
+or 
+public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] arr=new int[] {1,2,3,4,5,6,7,8};
+		int start=4;
+		int end=7;
+		int[] b=SliceArray(arr,start,end);
+		System.out.println(Arrays.toString(b));	
+ 
+	}
+	static int[] SliceArray(int[] arr,int start,int end)
+	{
+		int[] arr1=new int[end-start+1];
+		int x=0;
+		for(int i=start;i<=end;i++)
+		{
+			arr1[x]=arr[i];
+			x++;
+		}
+		return arr1;	
+	}
+ 
+
+
+
+
+
+
+TASK:
+
+Activity:
+
+	Identify as many methods available in String class.
+
+		length()		returns the length of the string
+
+		substring()	returns the portion of the string. Identify how the indices works.
+
+				first index is 0 ordinal, second index is 1 ordinal
+
+		indexOf()
+
+		charAt()
+
+length(): Returns the length of the string.
+substring(int beginIndex): Returns the substring starting from the specified index.
+substring(int beginIndex, int endIndex): Returns the substring starting from the specified beginIndex and ending at the specified endIndex-1.
+indexOf(String str): Returns the index within this string of the first occurrence of the specified substring.
+indexOf(String str, int fromIndex): Returns the index within this string of the first occurrence of the specified substring, starting at the specified index.
+charAt(int index): Returns the char value at the specified index.
+ 
+
+
+
+
+
+
+SOLUATION:
+import java.util.Scanner;
+ 
+public class App33{
+ 
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		String input=sc.next();
+		//check if the input is a valid ip address or not
+		//ipv4 only		ex:	127.0.0.1	
+		//each portion can range between 0 and 255
+		String exp="^(\\d|[1-9]\\d|1\\d\\d|2([0-4]\\d|5[0-5]))\\.(\\d|[1-9]\\d|1\\d\\d|2([0-4]\\d|5[0-5]))\\.(\\d|[1-9]\\d|1\\d\\d|2([0-4]\\d|5[0-5]))\\.(\\d|[1-9]\\d|1\\d\\d|2([0-4]\\d|5[0-5]))$";
+		System.out.println(input.matches(exp));
+	}
+ 
+}
+ 
+
+TASK:
+
+University - Requirement 3
+Requirement 3:
+   In this requirement, you need to validate the website and the mobile number of the note.
+a)Create a Class Main with the following static methods:
+Method Website	Description
+static Boolean validateWebsite(String website)	Validate the website based on the rules given below. Returns true ifwebsite is valid else return false
+static Boolean validateMobile(String mobileNo)	Validate the mobile number based on the rules given below. Returnstrue if mobileNo is valid else returnfalse
+b) While validating website follow the below rules,
+   
+http://www.iit.edu.in
+iit - domain name
+edu - sTLD
+in - ccTLD
+1. The website should start http:// or https:// protocol
+2. The website may or may not contain " www." after the protocol.
+3. The domain name should contain only alphabets, either uppercase or lowercase and should not contain any special characters.
+4. sTLD (sponsored top-level domain) should contain 2 to 6 characters
+5. ccTLD(country code top-level domain) may or may not be present in a website and it should contain 2 to 6 characters
+c) While validating mobile number follow the below rules,
+1.The mobile number should have prefix as " +91 "(international calling code).
+2.The mobile number should have 10 numbers [0-9].
+Note: Print "Website is valid" if website is valid else print "Website is invalid". Print "Mobile number is valid" if mobile number is valid else print "Mobile number is invalid".
+            All the above print statements are present in the main method.
+Menu:
+1.Validate Website
+2.Validate Mobile number
+Sample Input and Output 1:
+1.Validate Website
+2.Validate Mobile number
+Enter your choice:
+1
+Enter the Website to be validated:
+https://caspercollege.edu.in
+Website is valid
+Sample Input and Output 2:
+1.Validate Website
+2.Validate Mobile number
+Enter your choice:
+1
+Enter the Website to be validated:
+https://www.iit_m.ac.in
+Website is invalid
+Sample Input and Output 3:
+1.Validate Website
+2.Validate Mobile number
+Enter your choice:
+2
+Enter the Mobile no. to be validated:
++919876543210
+Mobile number is valid
+Sample Input and Output 4:
+1.Validate Website
+2.Validate Mobile number
+Enter your choice:
+2
+Enter the Mobile no. to be validated:
++9987643210
+Mobile number is invalid
+
+
+
+Solution:
+-----------
+import java.util.Scanner;
+public class Main {
+	static Boolean validateWebsite(String website)
+	{
+		String exp="http(s)?://(www[.])?[A-Za-z]+([.]{1}[a-z]{2,6}?){1,2}";
+		return website.matches(exp);
+	}
+	static Boolean validateMobile(String mobileNo)
+	{
+		String exp="[+]91\\d{10}";
+		return mobileNo.matches(exp);
+	}
+	
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("1.Validate Website\r\n"
+				+ "2.Validate Mobile number\r\n"
+				+ "Enter your choice:\r\n"
+				+ "");
+		
+		int choice=sc.nextInt();
+		switch(choice)
+		{
+		case 1:
+			System.out.println("Enter the Website to be validated:");
+			String website=sc.nextLine();
+			if(website.equals(""))
+				website=sc.nextLine();
+			if(validateWebsite(website))
+			{
+				System.out.println("Website is valid");
+			}else
+			{
+				System.out.println("Website is invalid");
+			}
+			break;
+		case 2:
+			System.out.println("Enter the Mobile no. to be validated:");
+			String mobileNo=sc.nextLine();
+			if(mobileNo.equals(""))
+				mobileNo=sc.nextLine();
+			if(validateMobile(mobileNo))
+			{
+				System.out.println("Mobile number is valid");
+			}
+			else
+			{
+				System.out.println("Mobile number is invalid");
+			}
+			break;			
+		}
+		
+	}
+}
+
+TASK:
+
+Accept a String input from the user, and check if it is a Palindrome or not.
+Hint:
+	user StringBuilder
+A palindrome is a String which is same in its reverse also.
+ex:
+	malayalam
+	madam
+	mam
+	mom
+	dad
+
+
+
+SOLUATION:
+
+import java.util.Scanner;
+public class AppPalindrome {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		String input=sc.nextLine();
+		//trim will remove only prefix and suffix spaces. Not in between
+		input.replaceAll(" ", "");
+		StringBuilder sb=new StringBuilder(input);
+//		sb.append(input);
+		sb.reverse();
+		String reverse=sb.toString();
+		if(input.equalsIgnoreCase(reverse))
+		{
+			System.out.println("Palindrome");
+		}else
+		{
+			System.out.println("Not palindrome");
+		}
+	}
+}
+
+TASK:
+What is Date?
+	Date is a class that contains
+		properties
+		methods
+the constructor of java.util.Date
+	is used to create an object of Date that contains current system date and time.
+
+
+
+SOLUATION:
+
+java.util.Date
+-------------------
+	every second that is ticking now, 
+	is represented as a Long number.
+	long data type.
+	import java.util.Date;
+public class App5Date {
+	public static void main(String[] args) {
+		Date dt=new Date();
+		System.out.println(dt);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+18-04-2024
+
+Java_Mock_11.docx
+https://github.com/jagasia/wipro2/blob/jag/Java/Java_Mock_11.docx
+ 
+University - Requirement 2
+	Solve this now.
+
+
+import java.util.*;
+
+class College {
+    private String name;
+    private String website;
+    private String mobile;
+    private String founder;
+    private Integer numberOfDept;
+    private String location;
+    private Date startingDate;
+
+    // Constructors
+    public College() {}
+
+    public College(String name, String website, String mobile, String founder, Integer numberOfDept, String location, Date startingDate) {
+        this.name = name;
+        this.website = website;
+        this.mobile = mobile;
+        this.founder = founder;
+        this.numberOfDept = numberOfDept;
+        this.location = location;
+        this.startingDate = startingDate;
+    }
+
+    // Getters and Setters
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getWebsite() {
+        return website;
+    }
+
+    
+    public String getMobile() {
+        return mobile;
+    }
+
+    public void setMobile(String mobile) {
+        this.mobile = mobile;
+    }
+
+    public String getFounder() {
+        return founder;
+    }
+
+    public void setFounder(String founder) {
+        this.founder = founder;
+    }
+
+    public Integer getNumberOfDept() {
+        return numberOfDept;
+    }
+
+    public void setNumberOfDept(Integer numberOfDept) {
+        this.numberOfDept = numberOfDept;
+    }
+
+    public String getLocation() {
+        return location;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
+    public Date getStartingDate() {
+        return startingDate;
+    }
+
+    public void setStartingDate(Date startingDate) {
+        this.startingDate = startingDate;
+    }
+
+    // Static method to create College object from detail string
+    public static College createCollege(String detail) {
+        String[] details = detail.split(",");
+        String name = details[0];
+        String website = details[1];
+        String mobile = details[2];
+        String founder = details[3];
+        Integer numberOfDept = Integer.parseInt(details[4]);
+        String location = details[5];
+        Date startingDate = new Date(details[6]); // Assuming the date string is in proper format
+        return new College(name, website, mobile, founder, numberOfDept, location, startingDate);
+    }
+
+    // Override toString method
+    @Override
+    public String toString() {
+        return String.format("%-15s%-20s%-15s%-15s%-15d%-15s%-15s", name, website, mobile, founder, numberOfDept, location, startingDate);
+    }
+}
+
+class University {
+    private String name;
+    private List<College> collegeList;
+
+    // Constructors
+    public University(String name) {
+        this.name = name;
+        this.collegeList = new ArrayList<>();
+    }
+
+    // Methods
+    public void addCollegeToUniversity(College college) {
+        collegeList.add(college);
+        System.out.println("College successfully added");
+    }
+
+    public Boolean removeCollege(String name) {
+        for (College college : collegeList) {
+            if (college.getName().equals(name)) {
+                collegeList.remove(college);
+                System.out.println("College successfully deleted");
+                return true;
+            }
+        }
+        System.out.println("College not found in the University");
+        return false;
+    }
+
+    public void displayColleges() {
+        if (collegeList.isEmpty()) {
+            System.out.println("No colleges to show");
+        } else {
+            System.out.println("Colleges in " + name);
+            System.out.format("%-15s%-20s%-15s%-15s%-15s%-15s%-15s\n", "Name","Website","Mobile","Founder","Number of Dept","Location","Starting Date");
+            for (College college : collegeList) {
+                System.out.println(college);
+            }
+        }
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter the name of the University:");
+        String universityName = scanner.nextLine();
+        University university = new University(universityName);
+
+        while (true) {
+            System.out.println("1.Add College\n2.Delete College\n3.Display Colleges\n4.Exit");
+            System.out.println("Enter your choice:");
+            int choice = scanner.nextInt();
+            scanner.nextLine(); // Consume newline
+
+            switch (choice) {
+                case 1:
+                    System.out.print("Enter college details (name, website, mobile, founder, numberOfDept, location, startingDate): ");
+                    String collegeDetail = scanner.nextLine();
+                    College college = College.createCollege(collegeDetail);
+                    university.addCollegeToUniversity(college);
+                    break;
+                case 2:
+                    System.out.println("Enter the name of the college to be deleted:");
+                    String collegeName = scanner.nextLine();
+                    university.removeCollege(collegeName);
+                    break;
+                case 3:
+                    university.displayColleges();
+                    break;
+                case 4:
+                    System.out.println("Exiting...");
+                    System.exit(0);
+                default:
+                    System.out.println("Invalid choice!");
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+Task:
+	Java_Mock_11.docx
+ 
+University - Requirement 5
+ 
+https://github.com/jagasia/wipro2/blob/jag/Java/Java_Mock_11.docx
+ 
+Implement comparable and comparators to achieve this.
+
+
+
+public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Input profit amount
+        int profit = scanner.nextInt();
+        scanner.nextLine(); // Consume newline
+
+        // Input ratios
+        String[] ratiosStr = scanner.nextLine().split(" ");
+        int[] ratios = new int[3];
+        for (int i = 0; i < 3; i++) {
+            ratios[i] = Integer.parseInt(ratiosStr[i]);
+        }
+
+        // Calculate individual profits
+        double totalRatio = ratios[0] + ratios[1] + ratios[2];
+        double ramuProfit = (profit * ratios[0]) / totalRatio;
+        double gopuProfit = (profit * ratios[1]) / totalRatio;
+        double samuProfit = (profit * ratios[2]) / totalRatio;
+
+        // Output profits rounded to 2 decimal places
+        System.out.printf("%.2f\n%.2f\n%.2f", ramuProfit, gopuProfit, samuProfit);
+    }
+}
+
+
+
+
+--------------------------------------------------------------
+                 ASSIGNMENT DAY4 AND 5
+--------------------------------------------------------------
+Constructors
+Implemnt a Matrix class that has a constructor which initializes the dimensions of a matrix and a method to fill the matrix with values.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+19-04-204
+TASK:
+[10:32 AM] Jagadeeswaran R (Unverified)
+Challenge:
+
+Accept a sentence as input from the user.
+
+Display the character and their number of occurrance as output.
+ 
+sample input:
+
+	this sentence is typed by me now
+
+sample output:
+
+	t	3
+
+	h	1
+
+	i	2
+
+	s	2
+
+		6
+
+	e	5
+
+	n	3
+
+	c	1
+
+	y	2
+
+	p	1
+
+	d	1
+
+	b	1
+
+	m	1
+
+	o	1
+
+	w	1
+ 
+Hint:
+
+	use map to maintain, Character vs Integer
+
+	Map<Character,Integer>
+ star 1
+
+
+
+
+
+
+
+SOLUTION:
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
+
+public class CharacterOccurrence {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter a sentence:");
+        String sentence = scanner.nextLine();
+
+        Map<Character, Integer> charOccurrences = new HashMap<>();
+
+        
+        for (char c : sentence.toCharArray()) {
+            if (c != ' ') {
+                charOccurrences.put(c, charOccurrences.getOrDefault(c, 0) + 1);
+            }
+        }
+
+               for (Map.Entry<Character, Integer> entry : charOccurrences.entrySet()) {
+            System.out.println(entry.getKey() + "\t" + entry.getValue());
+        }
+
+        scanner.close();
+    }
+}
+
+
+
+
+
+
+
+TASK:
+Task:
+	Mock 21 req 6
+App.java is present in 
+https://github.com/jagasia/ust1/blob/jag/java_programs/02-may-mock-21-req-6/src/App.java
+
+
+
+
+
+
+
+SOLUATION:
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.List;
+
+public class User {
+	private String name;
+	private String email;
+	private String phoneNumber;
+	private String location;
+	private List<Purchase> purchaseList;
+	
+	public User() {}
+
+	public User(String name, String email, String phoneNumber, String location, List<Purchase> purchaseList) {
+		super();
+		this.name = name;
+		this.email = email;
+		this.phoneNumber = phoneNumber;
+		this.location = location;
+		this.purchaseList = purchaseList;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getPhoneNumber() {
+		return phoneNumber;
+	}
+
+	public void setPhoneNumber(String phoneNumber) {
+		this.phoneNumber = phoneNumber;
+	}
+
+	public String getLocation() {
+		return location;
+	}
+
+	public void setLocation(String location) {
+		this.location = location;
+	}
+
+	public List<Purchase> getPurchaseList() {
+		return purchaseList;
+	}
+
+	public void setPurchaseList(List<Purchase> purchaseList) {
+		this.purchaseList = purchaseList;
+	}
+	
+	public static List<User> prefill(){
+		List<User> userList=new ArrayList<>();
+		userList.add(new User("Harry","harry@gmail.com","9856231478","NewYork", new ArrayList<Purchase>()));
+		userList.add(new User("Joe","joe@gmail.com","8956231548","Chicago", new ArrayList<Purchase>()));
+		userList.add(new User("Oliver","oliver@gmail.com","7856124589","SanFrancisco", new ArrayList<Purchase>()));
+		userList.add(new User("Danny","danny@gmail.com","9382714568","Los Angeles", new ArrayList<Purchase>()));
+		userList.add(new User("Brandon","brandon@gmail.com","98596215488","Boston", new ArrayList<Purchase>()));
+		userList.add(new User("Rob","rob@gmail.com","9584596662","NewYork", new ArrayList<Purchase>()));
+		return userList;
+		}
+
+	static User getValuableUser(List<User> userList,String month)
+	{
+		User valuableUser=null;
+		Double maxTotal=0.0;
+		
+		for(User u:userList)
+		{
+			List<Purchase> purchases = u.getPurchaseList();
+			Double total=0.0;
+			for(Purchase p : purchases)
+			{
+				SimpleDateFormat sdf=new SimpleDateFormat("MMMM");
+				String m=sdf.format(p.getPurchaseDate());
+				if(m.equalsIgnoreCase(month))
+				{
+					total+=p.getPrice();
+				}
+			}
+			if(total>maxTotal)
+			{
+				maxTotal=total;
+				valuableUser=u;
+			}
+		}
+		return valuableUser;
+	}
+}
+
+
+
+
+Task:
+	Mock 30 req 6
+-----------------------------------
+One User Many Purchase
+ 
+1..M	User Purchase
+1..1	Purchase User
+ 
+Skeleton is uploaded in git:
+https://github.com/jagasia/wipro2/tree/jag/Java/mock-30-req-6
+you need to complete the code in
+	UserScore file
+		static Map<String,UserScore> getTopPerformer(List<UserScore> scoreList)
+		{
+			return null;		//write your code here
+		}
+ 
+ 
+complete this part and run and check the test cases.
+
+
+
+SOLUATION:
+
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class User {
+	private String name;
+	private String emailId;
+	private String contactNumber;
+	private List<UserScore> userScoreList;
+	
+	public User() {}
+
+	public User(String name, String emailId, String contactNumber, List<UserScore> userScoreList) {
+		super();
+		this.name = name;
+		this.emailId = emailId;
+		this.contactNumber = contactNumber;
+		this.userScoreList = userScoreList;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getEmailId() {
+		return emailId;
+	}
+
+	public void setEmailId(String emailId) {
+		this.emailId = emailId;
+	}
+
+	public String getContactNumber() {
+		return contactNumber;
+	}
+
+	public void setContactNumber(String contactNumber) {
+		this.contactNumber = contactNumber;
+	}
+
+	public List<UserScore> getUserScoreList() {
+		return userScoreList;
+	}
+
+	public void setUserScoreList(List<UserScore> userScoreList) {
+		this.userScoreList = userScoreList;
+	}
+	public static List<User> prefill(){
+        List<User> list = new ArrayList<>();
+        list.add(new User("Harry","harry@gmail.com","9874585258",new ArrayList<UserScore>()));
+        list.add(new User("Oliver","oliver@gmail.com","9515951263",new ArrayList<UserScore>()));
+        list.add(new User("Danny","danny@gmail.com","8745874585",new ArrayList<UserScore>()));
+        list.add(new User("Matt","matt@gmail.com","9636925686",new ArrayList<UserScore>()));
+        list.add(new User("James","james@gmail.com","8454585263",new ArrayList<UserScore>()));
+        list.add(new User("Rob","rob@gmail.com","8475216953",new ArrayList<UserScore>()));
+        list.add(new User("Brandon","brandon@gmail.com","8457548965",new ArrayList<UserScore>()));
+        list.add(new User("Winn","winn@gmail.com","9231252136",new ArrayList<UserScore>()));
+        list.add(new User("Barry","barry@gmail.com","9568956235",new ArrayList<UserScore>()));
+        list.add(new User("Joe","joe@gmail.com","8525623568",new ArrayList<UserScore>()));
+        list.add(new User("John","john@gmail.com","8454575412",new ArrayList<UserScore>()));
+        list.add(new User("Slade","slade@gmail.com","9584758652",new ArrayList<UserScore>()));
+        return list;
+    }
+
+}
+
+
+
+you need to complete the code in
+	UserScore file
+		static Map<String,UserScore> getTopPerformer(List<UserScore> scoreList)
+		{
+			return null;		//write your code here
+		}
+ 
+ 
+complete this part and run and check the test cases.
+
+
+ static Map<String, UserScore> getTopPerformer(List<UserScore> scoreList) {
+        Map<String, UserScore> topPerformers = new TREEMap<>();
+        Map<String, Double> maxCompletionPercentage = new TREEMap<>();
+
+        for (UserScore userScore : scoreList) {
+            String courseName = userScore.getCourse().getName();
+            Double completionPercentage = userScore.getCompletionPercentage();
+
+            if (!maxCompletionPercentage.containsKey(courseName) || completionPercentage > maxCompletionPercentage.get(courseName)) {
+                maxCompletionPercentage.put(courseName, completionPercentage);
+                topPerformers.put(courseName, userScore);
+            }
+        }
+
+        return topPerformers;
+    }
